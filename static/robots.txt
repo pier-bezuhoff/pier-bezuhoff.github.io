@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://pier-bezuhoff.github.io/sitemap.xml
