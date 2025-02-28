@@ -1,69 +1,43 @@
 {-# LANGUAGE OverloadedStrings #-}
-import Hakyll
+{-# LANGUAGE TypeApplications #-}
 
+import System.FilePath (takeBaseName)
+import Hakyll
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-
     match "static/*" $ do
         route $ gsubRoute "static/" $ const "" -- put static/* files in the root
         compile copyFileCompiler
-
     match "css/styles.css" $ do
         route $ constRoute "styles.css"
         compile compressCssCompiler
-
+    match "css/*.css" $ do
+        route idRoute
+        compile compressCssCompiler
     match "images/*" $ do
         route $ gsubRoute "images/" $ const "" -- put images/* files in the root
         compile copyFileCompiler
-
-----------------------------------------------
-{-
-    match "images/*" $ do
-        route idRoute
-        compile copyFileCompiler
-
-    match "css/*" $ do
-        route idRoute
-        compile compressCssCompiler
-
-    match (fromList ["about.rst", "contact.markdown"]) $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-
-    match "posts/*" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html" postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
-
-    create ["archive.html"] $ do
+    -- match "icons/*" $ do
+        -- route idRoute
+        -- compile copyFileCompiler
+    match "templates/*" $
+        compile templateCompiler
+    create ["my-icons-gallery.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx = listField "posts" postCtx (return posts) <> constField "title" "Archives" <> defaultContext
+            icons <- loadAll "icons/*.svg" -- :: Compiler [Item String] 
+            let context = listField "icons" iconContext (return icons) <> defaultContext
             makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/icon-grid.html" context
+                >>= loadAndApplyTemplate "templates/my-icon-gallery.html" context
+                >>= loadAndApplyTemplate "templates/default.html" context
                 >>= relativizeUrls
 
-    match "index.html" $ do
-        route $ constRoute "sample-index.html"
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx = listField "posts" postCtx (return posts) <> defaultContext
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
-                >>= relativizeUrls
-
-    match "templates/*" $ compile templateBodyCompiler
--}
-
---------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx = dateField "date" "%B %e, %Y" <> defaultContext
+iconContext :: Context String
+iconContext = svgField <> labelField <> defaultContext where
+    -- urlField = field "url" $ pure . toUrl . toFilePath . itemIdentifier
+    svgField = bodyField "svg"
+    labelField = field "label" $ pure . name2label . takeBaseName . toFilePath . itemIdentifier
+    name2label = id
