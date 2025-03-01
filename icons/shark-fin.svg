@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath6">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+  <clipPath id="clipPath7">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+  <clipPath id="clipPath8">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+  <clipPath id="clipPath9">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+  <clipPath id="clipPath10">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+  <clipPath id="clipPath11">
+   <path d="m13.251 17.337c-7.1686-7.1686-18.79-7.1686-25.959 0l12.979 12.979c-3.5843-3.5843-3.5843-9.395 0-12.979 3.5843-3.5843 9.395-3.5843 12.979 0z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".99914" style="paint-order:fill stroke markers"/>
+  </clipPath>
+ </defs>
+ <g stroke="#000" stroke-linecap="round" stroke-opacity=".99914">
+  <path d="m20.86 3.6053c-9.3226 0-16.879 7.5568-16.879 16.879h16.879c-4.6613 0-8.4397-3.7784-8.4397-8.4397 0-4.6613 3.7784-8.4397 8.4397-8.4397z" fill="none" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" style="paint-order:fill stroke markers"/>
+  <path d="m21.848 3.5a1.3484 1.3484 0 0 1-1.3484 1.3484 1.3484 1.3484 0 0 1-1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484 1.3484z" stroke-width="2.3033"/>
+  <path d="m21.848 20.5a1.3484 1.3484 0 0 1-1.3484 1.3484 1.3484 1.3484 0 0 1-1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484 1.3484z" stroke-width="2.3032"/>
+  <path d="m4.8484 20.5a1.3484 1.3484 0 0 1-1.3484 1.3484 1.3484 1.3484 0 0 1-1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484-1.3484 1.3484 1.3484 0 0 1 1.3484 1.3484z" stroke-width="2.3033"/>
+ </g>
+ <g transform="matrix(.91958 0 0 .91958 .96981 .94828)" stroke-width="0">
+  <path transform="rotate(-45)" d="m-11.176 9.6488h1.4v15.4h-1.4z" clip-path="url(#clipPath11)"/>
+  <path transform="rotate(-45)" d="m-8.3753 10.747h1.4v15.4h-1.4z" clip-path="url(#clipPath10)"/>
+  <path transform="rotate(-45)" d="m-5.5524 11.581h1.4v15.4h-1.4z" clip-path="url(#clipPath9)"/>
+  <path transform="rotate(-45)" d="m-2.7613 9.5077h1.4v15.4h-1.4z" clip-path="url(#clipPath8)"/>
+  <path transform="rotate(-45)" d="m0.012572 7.1091h1.4v15.4h-1.4z" clip-path="url(#clipPath7)"/>
+  <path transform="rotate(-45)" d="m2.8189 7.4727h1.4v15.4h-1.4z" clip-path="url(#clipPath6)"/>
+ </g>
+</svg>

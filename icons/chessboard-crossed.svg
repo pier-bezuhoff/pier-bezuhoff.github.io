@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <mask id="mask-powermask-path-effect2" maskUnits="userSpaceOnUse">
+   <path id="mask-powermask-path-effect2_box" d="m11 1h12v12h-12z" fill="#fff"/>
+   <path d="m24.021 21.192-21.213-21.213-1.4142 1.4142 21.213 21.213z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0016"/>
+  </mask>
+  <mask id="mask-powermask-path-effect3" maskUnits="userSpaceOnUse">
+   <path id="mask-powermask-path-effect3_box" d="m0.5 0.5h23v23h-23z" fill="#fff"/>
+   <path d="m24.021 21.192-21.213-21.213-1.4142 1.4142 21.213 21.213z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0016"/>
+  </mask>
+ </defs>
+ <g stroke="#000">
+  <path d="m1.9565 1.9565h20.087v20.087h-20.087z" fill="none" mask="url(#mask-powermask-path-effect3)" stroke-width=".91293"/>
+  <path d="m2.44 12.44h9.12v9.12h-9.12z" stroke-width=".88"/>
+  <path d="m12.44 2.44h9.12v9.12h-9.12z" mask="url(#mask-powermask-path-effect2)" stroke-width=".88"/>
+ </g>
+ <rect transform="matrix(-.70711 -.70711 -.70711 .70711 0 0)" x="-31.971" y="1.8553e-7" width="30" height="2"/>
+</svg>

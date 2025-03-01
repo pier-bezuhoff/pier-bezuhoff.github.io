@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath9">
+   <circle transform="rotate(44.196)" cx="10.749" cy="10.201" r="6.259" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".99914" stroke-width=".97127"/>
+  </clipPath>
+  <clipPath id="clipPath11">
+   <circle transform="rotate(44.196)" cx="10.738" cy="10.216" r="5.7031" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".99914" stroke-width=".88501"/>
+  </clipPath>
+ </defs>
+ <g display="none" stroke="#000">
+  <rect x="1.0505" y="1.0647" width="22.003" height="22.003" display="inline" fill="none"/>
+  <rect x="12.413" y="12.4" width="10.364" height="10.364" display="inline"/>
+  <rect x="1.045" y="1.05" width="10.364" height="10.364" display="inline"/>
+ </g>
+ <g fill="none" stroke="#000">
+  <g stroke-linecap="round">
+   <circle cx="17.101" cy="17.016" r="6.3406" stroke-linejoin="round" stroke-opacity=".99914" stroke-width=".98394"/>
+   <path d="m4.1862 5.156s5.2535-0.85573 9.2106 7.4546c3.9571 8.3103 7.3376 8.2899 7.3376 8.2899" stroke-width="3"/>
+   <circle cx="7.6147" cy="7.719" r="6.9587" stroke-linejoin="round" stroke-opacity=".99914" stroke-width="1.0798"/>
+  </g>
+  <g transform="matrix(1.1013 -.15241 .15241 1.1013 4.6894 -8.4587)" clip-path="url(#clipPath9)" stroke-width=".7">
+   <path d="m-3.4428 20.214 9.4096-9.6338"/>
+   <path d="m-6.1594 17.573 9.4096-9.6338"/>
+   <path d="m-7.5177 16.252 9.4096-9.6338"/>
+   <path d="m-0.72621 22.855 9.4096-9.6338"/>
+   <path d="m-2.0845 21.535 9.4096-9.6338"/>
+   <path d="m-4.8011 18.893 9.4096-9.6338"/>
+  </g>
+  <g transform="matrix(1.1029 -.14009 .14009 1.1029 14.379 .7942)" clip-path="url(#clipPath11)" stroke-width=".7">
+   <path d="m-3.4428 20.214 9.4096-9.6338"/>
+   <path d="m-6.1594 17.573 9.4096-9.6338"/>
+   <path d="m-7.5177 16.252 9.4096-9.6338"/>
+   <path d="m-0.72621 22.855 9.4096-9.6338"/>
+   <path d="m-2.0845 21.535 9.4096-9.6338"/>
+   <path d="m-4.8011 18.893 9.4096-9.6338"/>
+  </g>
+ </g>
+</svg>
