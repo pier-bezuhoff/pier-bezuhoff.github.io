@@ -5,7 +5,7 @@ import Data.Char (toUpper)
 import System.FilePath (takeBaseName)
 import Hakyll
 
---------------------------------------------------------------------------------
+-- TODO: automatically insert correct last modified date into sitemap and index/strucutred data (json ld)
 main :: IO ()
 main = hakyll $ do
     match "static/*" $ do
@@ -36,7 +36,6 @@ main = hakyll $ do
 
 iconContext :: Context String
 iconContext = svgField <> labelField <> defaultContext where
-    -- urlField = field "url" $ pure . toUrl . toFilePath . itemIdentifier
     svgField = bodyField "svg"
     labelField = field "label" $ pure . name2label . takeBaseName . toFilePath . itemIdentifier
     name2label "" = ""
