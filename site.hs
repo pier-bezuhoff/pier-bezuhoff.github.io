@@ -25,7 +25,7 @@ main = hakyll $ do
         compile $ getResourceBody
     match "templates/*" $
         compile templateCompiler
-    create ["my-icons-gallery.html"] $ do
+    create ["my-icon-gallery.html"] $ do
         route idRoute
         compile $ do
             icons <- loadAll "icons/*.svg" -- :: Compiler [Item String] 

@@ -87,7 +87,7 @@ a {
 
 .icon-svg-wrap {
     padding: 4px;
-    background-color: var(--text-color);
+    background-color: var(--text-color-dark);
 }
 
 .icon-svg-wrap > svg {
@@ -95,7 +95,7 @@ a {
     height: auto;
 }
 
-.icon-svg-wrap > svg:hover {
+.icon-item:hover {
     transform: scale(1.1);
 }
 
