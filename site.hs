@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeApplications #-}
 
+import Data.List (isPrefixOf)
 import Data.Char (toUpper)
 import System.FilePath (takeBaseName)
 import Hakyll
@@ -29,14 +30,19 @@ main = hakyll $ do
         route idRoute
         compile $ do
             icons <- loadAll "icons/*.svg" -- :: Compiler [Item String] 
-            let context = listField "icons" iconContext (return icons) <> constField "title" "My icons gallery" <> defaultContext
+            let pageTitle = "My icon gallery"
+            let context = listField "icons" iconContext (pure icons) <> constField "title" pageTitle <> defaultContext
             makeItem ""
                 >>= loadAndApplyTemplate "templates/my-icon-gallery.html" context
                 >>= relativizeUrls
+    -- cannot copy .nojekyll and .gitignore
 
 iconContext :: Context String
 iconContext = svgField <> labelField <> defaultContext where
-    svgField = bodyField "svg"
+    svgField = field "svg" $ pure . cleanSvg . itemBody
+    cleanSvg svg = if "<?xml" `isPrefixOf` svg
+        then drop 1 $ snd $ break (== '\n') svg -- drop first line with <?xml...?>
+        else svg
     labelField = field "label" $ pure . name2label . takeBaseName . toFilePath . itemIdentifier
     name2label "" = ""
     name2label (c0:cs) = [toUpper c0] <> map (\c -> if c == '-' then ' ' else c) cs
