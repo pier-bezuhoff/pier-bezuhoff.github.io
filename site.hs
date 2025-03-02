@@ -29,9 +29,12 @@ main = hakyll $ do
     create ["my-icon-gallery.html"] $ do
         route idRoute
         compile $ do
-            icons <- loadAll "icons/*.svg" -- :: Compiler [Item String] 
-            let pageTitle = "My icon gallery"
-            let context = listField "icons" iconContext (pure icons) <> constField "title" pageTitle <> defaultContext
+            icons <- loadAll "icons/*.svg" -- :: Compiler [Item String]
+            let context =
+                    listField "icons" iconContext (pure icons) <>
+                    constField "title" "My icon gallery" <>
+                    constField "canonicalUrl" "https://pier-bezuhoff.github.io/my-icon-gallery.html" <>
+                    defaultContext
             makeItem ""
                 >>= loadAndApplyTemplate "templates/my-icon-gallery.html" context
                 >>= relativizeUrls

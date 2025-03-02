@@ -87,7 +87,7 @@ a {
 
 .icon-svg-wrap {
     padding: 4px;
-    background-color: var(--text-color-dark);
+    background-color: light-dark(var(--bg-color-light), var(--text-color-dark));
 }
 
 .icon-svg-wrap > svg {
@@ -101,4 +101,5 @@ a {
 
 .icon-label {
     padding: 4px;
+    text-align: center;
 }
